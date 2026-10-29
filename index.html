@@ -225,6 +225,22 @@ dl {
       text-align: right; 
       padding-right: 2px;
     }
+    @media (max-width: 768px) {
+        .primera-tabla .sheet-row {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px !important;
+        }
+        .primera-tabla .sheet-dt {
+            width: 100% !important;
+            text-align: left !important;
+            margin-bottom: 2px !important;
+        }
+        .primera-tabla .sheet-dd {
+            width: 100% !important;
+            text-align: left !important;
+            white-space: normal !important;
+        }
   }
 </style>
 </head>
@@ -242,51 +258,51 @@ dl {
   <!-- BLOQUE 1: Datos de Identificación -->
 
     <!-- BLOQUE 1: Datos de Identificación -->
-<div class="card-block primera-tabla" style="max-width: 100%; padding: 10px; box-sizing: border-box;">
-    <header>
-        <h1 style="font-weight: 545; color: #000000; font-family: 'Segoe UI', Roboto, sans-serif; font-size: 14px; margin: 0 0 12px 0; letter-spacing: 0.2px;">Datos de Identificación</h1>
+<div class="card-block primera-tabla" style="max-width: 100%; padding: 16px; box-sizing: border-box; background: #ffffff; border-radius: 8px;">
+    <header style="border-bottom: 2px solid #e0e0e0; padding-bottom: 8px; margin-bottom: 16px;">
+        <h1 style="font-weight: 545; color: #000000; font-family: 'Segoe UI', Roboto, sans-serif; font-size: 15px; margin: 0; letter-spacing: 0.2px;">Datos de Identificación</h1>
     </header>
     <div class="sheet">
         <dl style="display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0;">
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">CURP:</dt>
-                <dd class="mono" style="margin: 0; color: #333; font-size: 14px; word-break: break-all;">GABM921007HSPRLN01</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">CURP:</dt>
+                <dd class="mono sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: monospace; white-space: nowrap; word-break: break-all;">GABM921007HSPRLN01</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Nombre:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">MANUEL EDUARDO</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Nombre:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">MANUEL EDUARDO</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Apellido Paterno:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">GARCIA</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Apellido Paterno:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">GARCIA</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Apellido Materno:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">BELTRAN</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Apellido Materno:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">BELTRAN</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Fecha Nacimiento:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">07-10-1992</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Fecha Nacimiento:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">07-10-1992</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Fecha de Inicio de operaciones:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">01-06-2015</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Fecha de Inicio de operaciones:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">01-06-2015</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; border-bottom: 1px solid #f0f0f0; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Situación del contribuyente:</dt>
-                <dd class="status-text" style="margin: 0; color: #333; font-size: 14px; font-weight: bold;">ACTIVO</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #f0f0f0;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Situación del contribuyente:</dt>
+                <dd class="status-text sheet-dd" style="margin: 0; padding: 0; color: #2e7d32; font-size: 14px; font-family: sans-serif; font-weight: bold; white-space: nowrap;">ACTIVO</dd>
             </div>
             
-            <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; padding-bottom: 6px; gap: 4px;">
-                <dt style="font-weight: bold; color: #555; font-size: 14px; min-width: 120px;">Fecha del último cambio de situación:</dt>
-                <dd style="margin: 0; color: #333; font-size: 14px;">01-06-2015</dd>
+            <div class="row sheet-row" style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 4px;">
+                <dt class="sheet-dt" style="font-weight: bold; color: #555; font-size: 14px; font-family: sans-serif; margin: 0; padding: 0;">Fecha del último cambio de situación:</dt>
+                <dd class="sheet-dd" style="margin: 0; padding: 0; color: #111; font-size: 14px; font-family: sans-serif; white-space: nowrap;">01-06-2015</dd>
             </div>
 
         </dl>
