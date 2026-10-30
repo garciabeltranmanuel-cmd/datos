@@ -258,6 +258,33 @@ dl {
             white-space: normal !important;
             word-break: break-all !important;
         }
+         /* --- ADAPTACIÓN PARA CELULARES (Pantallas menores a 480px) --- */
+    @media (max-width: 480px) {
+        .row {
+            flex-direction: column; /* Cambia de fila a columna (apilado) */
+            align-items: stretch;
+            gap: 2px;
+            border-bottom: 1px dashed #e0ded8; /* Línea sutil divisora opcional */
+            padding-bottom: 8px;
+        }
+        .row dt {
+            width: 100%;
+            text-align: left; /* Título alineado a la izquierda */
+            padding-right: 0;
+            font-weight: bold; /* Un poco más oscuro para diferenciarlo en móvil */
+            color: #666;
+            font-size: 13px;
+        }
+        .row dd {
+            width: 100%;
+            text-align: left;
+            padding-left: 0;
+            font-size: 14px;
+        }
+        .row:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
   }
 </style>
 </head>
@@ -278,7 +305,7 @@ dl {
 <link href="https://googleapis.com" rel="stylesheet">
 
 <div class="card-block primera-tabla" style="display: block !important; width: 100% !important; max-width: 100% !important; padding: 12px; box-sizing: border-box; background: #ffffff; clear: both !important; font-family: 'Montserrat', sans-serif !important;">
-    <header style="margin-bottom: 8px; display: block !important; width: 100% !important; text-align: left !important;">
+    <header style="margin-bottom: 2px; display: block !important; width: 100% !important; text-align: left !important;">
         <h1 style="font-weight: 700; color: #000000; font-family: 'Montserrat', sans-serif !important; font-size: 14px; margin: 0; letter-spacing: 0.2px; text-align: left !important;">Datos de Identificación</h1>
     </header>
     
@@ -414,47 +441,46 @@ dl {
   </div> --> 
 
  <div class="card-block">
-    <header>
-        <h1 style="font-weight: 545; color: #000000; font-family: 'Segoe UI', Roboto, sans-serif; font-size: 14px; margin: 0; letter-spacing: 0.2px;">Datos de Ubicación (domicilio fiscal, vigente)</h1>
+    <header class="card-header">
+        <h1 class="card-title">Datos de Ubicación (domicilio fiscal, vigente)</h1>
     </header>
     <div class="sheet">
-        <dl style="display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0;">
-            <!-- Filas con alineación a la izquierda y espacio uniforme -->
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Entidad Federativa:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI</dd>
+        <dl class="data-list">
+            <div class="row">
+                <dt>Entidad Federativa:</dt>
+                <dd>SAN LUIS POTOSI</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Municipio o delegación:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI</dd>
+            <div class="row">
+                <dt>Municipio o delegación:</dt>
+                <dd>SAN LUIS POTOSI</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Colonia:</dt>
-                <dd style="margin: 0; white-space: nowrap;">OTRA NO ESPECIFICADA EN EL CATALOGO</dd>
+            <div class="row">
+                <dt>Colonia:</dt>
+                <dd>OTRA NO ESPECIFICADA EN EL CATALOGO</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Tipo de vialidad:</dt>
-                <dd style="margin: 0; white-space: nowrap;">CALLE</dd>
+            <div class="row">
+                <dt>Tipo de vialidad:</dt>
+                <dd>CALLE</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Nombre de la vialidad:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SANTA MONICA</dd>
+            <div class="row">
+                <dt>Nombre de la vialidad:</dt>
+                <dd>SANTA MONICA</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Número exterior:</dt>
-                <dd style="margin: 0; white-space: nowrap;">157</dd>
+            <div class="row">
+                <dt>Número exterior:</dt>
+                <dd>157</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Número interior:</dt>
-                <dd style="margin: 0; white-space: nowrap;"></dd>
+            <div class="row">
+                <dt>Número interior:</dt>
+                <dd>&nbsp;</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">CP:</dt>
-                <dd style="margin: 0; white-space: nowrap;">78250</dd>
+            <div class="row">
+                <dt>CP:</dt>
+                <dd>78250</dd>
             </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">AL:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI 1</dd>
+            <div class="row">
+                <dt>AL:</dt>
+                <dd>SAN LUIS POTOSI 1</dd>
             </div>
         </dl>
     </div>
