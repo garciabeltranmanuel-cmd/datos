@@ -258,7 +258,7 @@ dl {
             white-space: normal !important;
             word-break: break-all !important;
         }
-     
+
   }
 </style>
 </head>
@@ -395,70 +395,98 @@ dl {
 
   <!-- BLOQUE 2: Datos de Ubicación -->
 
-  <!-- <div class="card-block">
-    <header>
-      <h1>Datos de Ubicación (domicilio fiscal, vigente)</h1>
+<div class="card-block" style="display: block !important; width: 100% !important; max-width: 100% !important; padding: 0px 0px 12px 0px !important; box-sizing: border-box; background: #ffffff; clear: both !important; font-family: 'Montserrat', sans-serif !important; overflow: hidden !important;">
+    
+    <!-- Encabezado que ocupa el 100% real del ancho -->
+    <header style="margin-bottom: 8px; display: block !important; width: 100% !important; text-align: left !important; box-sizing: border-box;">
+        <h1 style="font-weight: 700; color: #000000; font-family: 'Montserrat', sans-serif !important; font-size: 14px; margin: 0; letter-spacing: 0.2px; text-align: left !important; width: 100% !important;">Datos de Ubicación (domicilio fiscal, vigente)</h1>
     </header>
-    <div class="sheet">
-      <dl>
-        <div class="row"><dt>Entidad Federativa:</dt><dd>SAN LUIS POTOSI</dd></div>
-        <div class="row"><dt>Municipio o delegación:</dt><dd>SAN LUIS POTOSI</dd></div>
-        <div class="row"><dt>Colonia:</dt><dd>OTRA NO ESPECIFICADA EN EL CATALOGO</dd></div>
-        <div class="row"><dt>Tipo de vialidad:</dt><dd>CALLE</dd></div>
-        <div class="row"><dt>Nombre de la vialidad:</dt><dd>SANTA MONICA</dd></div>
-        <div class="row"><dt>Número exterior:</dt><dd>157</dd></div>
-        <div class="row"><dt>Número interior:</dt><dd></dd></div>
-        <div class="row"><dt>CP:</dt><dd>78250</dd></div>
-        <div class="row"><dt>AL:</dt><dd>SAN LUIS POTOSI 1</dd></div>
-      </dl>
-    </div>
-  </div> --> 
-
- <div class="card-block">
-    <header>
-        <h1 style="font-weight: 545; color: #000000; font-family: 'Segoe UI', Roboto, sans-serif; font-size: 14px; margin: 0; letter-spacing: 0.2px;">Datos de Ubicación (domicilio fiscal, vigente)</h1>
-    </header>
-    <div class="sheet">
-        <dl style="display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0;">
-            <!-- Filas con alineación a la izquierda y espacio uniforme -->
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Entidad Federativa:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Municipio o delegación:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Colonia:</dt>
-                <dd style="margin: 0; white-space: nowrap;">OTRA NO ESPECIFICADA EN EL CATALOGO</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Tipo de vialidad:</dt>
-                <dd style="margin: 0; white-space: nowrap;">CALLE</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Nombre de la vialidad:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SANTA MONICA</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Número exterior:</dt>
-                <dd style="margin: 0; white-space: nowrap;">157</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">Número interior:</dt>
-                <dd style="margin: 0; white-space: nowrap;"></dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">CP:</dt>
-                <dd style="margin: 0; white-space: nowrap;">78250</dd>
-            </div>
-            <div class="row" style="display: flex; justify-content: flex-start; align-items: center; padding-bottom: 4px;">
-                <dt style="font-weight: bold; color: #555; min-width: 160px;">AL:</dt>
-                <dd style="margin: 0; white-space: nowrap;">SAN LUIS POTOSI 1</dd>
-            </div>
-        </dl>
-    </div>
+    
+    <!-- Contenedor con padding horizontal para cuidar los bordes en el celular -->
+    <div class="sheet" style="display: block !important; width: 100% !important; padding: 0 12px !important; box-sizing: border-box !important;">
+        <table style="width: 100% !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 !important; padding: 0 !important; border: none !important; font-family: 'Montserrat', sans-serif !important;">
+            <tbody>
+                
+                <!-- Entidad Federativa -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Entidad Federativa
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        SAN LUIS POTOSI
+                    </td>
+                </tr>
+                
+                <!-- Municipio o delegación -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Municipio o delegación
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        SAN LUIS POTOSI
+                    </td>
+                </tr>
+                
+                <!-- Colonia -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Colonia
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        OTRA NO ESPECIFICADA EN EL CATALOGO
+                    </td>
+                </tr>
+                
+                <!-- Tipo de vialidad -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Tipo de vialidad
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        CALLE
+                    </td>
+                </tr>
+                
+                <!-- Nombre de la vialidad -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Nombre de la vialidad
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        SANTA MONICA
+                    </td>
+                </tr>
+                
+                <!-- Número exterior -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Número exterior
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important;">
+                        157
+                    </td>
+                </tr>
+                
+                <!-- Número interior -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        Número interior
+                    </td>
+                    <td style="width: 52% !important; min-width: 52% !important; max-width: 52% !important; padding: 6px 0 6px 8px !important; vertical-align: middle !important; text-align: left !important; color: #000000 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important;">
+                        <!-- Se mantiene vacío tal como en tu código original -->
+                    </td>
+                </tr>
+                
+                <!-- CP -->
+                <tr style="border-bottom: 1px solid #f0f0f0 !important;">
+                    <td style="width: 48% !important; min-width: 48% !important; max-width: 48% !important; padding: 6px 8px 6px 0 !important; vertical-align: middle !important; text-align: right !important; font-weight: 700 !important; color: #333333 !important; font-family: 'Montserrat', sans-serif !important; font-size: 13px !important; line-height: 1.2 !important; white-space: normal !important; word-wrap: break-word !important;">
+                        CP
+                    </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>        
 </div>
 
   <!-- BLOQUE 3: Características Fiscales -->
